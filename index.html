@@ -45,6 +45,7 @@
       async
     ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <title>Neomar Iglesias / Back-End Developer</title>
   </head>
   <body>
@@ -339,8 +340,53 @@
           </a>
         </div>
       </div>
+
+      <footer class="footer">
+
+        <!-- <section class="contacto">
+          <div class="contenedor">
+              <div class="footer-textos">
+                  <h2>Me manda un mensagem</h2>
+                  <p>Lorem, ipsum dolor.</p>
+              </div>
+              <form action="" class="formulario" method="POST">
+                  <input type="text" placeholder="Nome" id="nombre" name="nombre" value="">
+                  <input type="email" placeholder="Correio" id="correo" name="correo" value="" class="email">
+                  <textarea name="mensaje" id="mensaje" placeholder="Mensagem"></textarea>
+
+                 <div class="derecha">
+                  <input class="boton derecha" type="submit" value="Contactar" name="submmit">
+                  <p class="warning" id="warning"></p>
+                  </div>
+                  
+              </form>
+          </div>
+      </section> -->
+      <section class="contacto">
+        <div class="contenedor">
+            <div class="footer-textos">
+                <h2>Me manda un mensagem</h2>
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+            <form action="" class="formulario" method="POST">
+                <input type="text" placeholder="Nome" id="nombre" name="nombre" value="">
+                <input type="email" placeholder="Correio" id="correo" name="correo" value="" class="email">
+                <textarea name="mensaje" id="mensaje" placeholder="Mensagem"></textarea>
+                
+               <div class="derecha">
+                <input class="boton derecha" type="submit" onclick="return enviarForm();" value="Contactar" name="submmit">
+                <p class="warning" id="warning"></p>
+                </div>
+                
+            </form>
+            <div id="error" ></div>
+        </div>
     </section>
-    <footer class="footer">
+
+
+      <footer class="footer">
+    
+   
       <div class="container">
         <p>
           Copyright © 2022. <a href="#">NeomarIglesias</a> <br />
@@ -349,5 +395,23 @@
       </div>
     </footer>
     <script async src="./index.js"></script>
+    <script src="./valid.js"></script>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+  
+    <script
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfKGvuhRH88M_MDgCuzhu7R3J_q7UerwI&callback=initMap&v=weekly" defer 
+  ></script>
+ 
+  
+    
   </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vali.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="contacto">
+        <div class="contenedor">
+            <div class="footer-textos">
+                <h2>Me manda un mensagem</h2>
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+            <form action="" class="formulario" method="POST">
+                <input type="text" placeholder="Nome" id="nombre" name="nombre" value="">
+                <input type="email" placeholder="Correio" id="correo" name="correo" value="" class="email">
+                <textarea name="mensaje" id="mensaje" placeholder="Mensagem"></textarea>
+                
+               <div class="derecha">
+                <input class="boton derecha" type="submit" onclick="return enviarForm();" value="Contactar" name="submmit">
+                <p class="warning" id="warning"></p>
+                </div>
+                
+            </form>
+            <div id="error" ></div>
+        </div>
+    </section>
+<script src="vali.js"></script>
+</body>
+</html>

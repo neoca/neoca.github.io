@@ -49,6 +49,8 @@ function intersectionHandler(entry) {
   }
 }
 
+
+
 // window.addEventListener("mousemove", parallax);
 
 // function parallax(e) {
@@ -77,3 +79,23 @@ ScrollReveal().reveal(".services__item", { delay: 450 });
 ScrollReveal().reveal(".portfolio__item", { delay: 450 });
 ScrollReveal().reveal(".contact__item", { delay: 450 });
 ScrollReveal().reveal(".footer", { delay: 450 });
+ 
+
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -29.1727937, lng: -51.1881155 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 12,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+window.initMap = initMap;

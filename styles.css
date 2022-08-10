@@ -486,3 +486,116 @@ section {
 .footer a:hover {
   color: var(--blue);
 }
+.contacto-formulario  input[type="submit"]{
+  display:block;
+  width: 100px;
+  margin:10px 0;
+  padding: 10px 15px;
+  background: none;
+  border:1px solid #15a4fa;
+  border-radius: 5px;
+  color:#fff;
+  cursor: pointer;
+  float:right;
+}
+.contacto-formulario  input[type="submit"]:hover{
+  background: #15a4fa;
+  color: #fff;
+}
+.contacto-formulario  textarea{
+  height:150px;
+  max-height: 150px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 150px;
+}
+
+
+footer .contacto  input[type="text"], footer .contacto  input[type="email"],
+footer .contacto  textarea{
+    width: 100%;
+    margin: 5px 0;
+    padding: 15px 20px;
+    background: none;
+    border-radius: 5px;
+    color:rgb(204, 204, 204);
+    border: 2px solid rgba(204, 204, 204, 0.383);
+    font-family: 'lato';
+    font-weight: 300;
+}
+
+footer .contacto  textarea{
+    height:150px;
+    max-height: 150px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+}
+.derecha{
+   display: flex;
+   justify-content: flex-end;
+}
+footer .contacto  input[type="submit"]{
+    display:block;
+    width: 100px;
+    margin:10px 0;
+    padding: 10px 15px;
+    background: none;
+    border:1px solid #15a4fa;
+    border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+    float:right;
+
+}
+footer .contacto  input[type="submit"]:hover{
+    background: #15a4fa;
+    color: #fff;
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+  
+}
+.footer-textos{
+  text-align: center;
+  color: #fff;
+  font-size:25px;
+}
+
+.footer-textos p{
+  font-size: 14px;
+  margin:15px 0 30px 0;
+  color: #999999;
+
+}
+.derecha{
+  display: flex;
+  justify-content: flex-end;
+}
+.contacto{
+  height:600px;
+  background-image: linear-gradient(to right, rgb(7, 1, 7), blue, rgb(108, 0, 159) );
+  background-position:center;
+  padding:60px 0;
+}
+.warning{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #a90709;
+  padding-top: 20px;
+}
+#map{
+	height: 500px;
+	width: 100%;
+}
+.mapademo{
+	height: 500px;
+	width: 100%;
+  background-color: #0e76a8;
+}
